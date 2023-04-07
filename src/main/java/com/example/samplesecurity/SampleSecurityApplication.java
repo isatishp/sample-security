@@ -35,7 +35,7 @@ public class SampleSecurityApplication {
 
 	@Bean
 	public WebSecurityCustomizer webSecurityCustomizer() {
-		return web -> web.ignoring().mvcMatchers("/JWKS");
+		return web -> web.ignoring().requestMatchers("/JWKS");
 	}
 
     @Bean
