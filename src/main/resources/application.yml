@@ -1,0 +1,5 @@
+spring:
+  security.oauth2.resourceserver:
+    jwt:
+      jws-algorithm: RS512
+      jwk-set-uri: http://localhost:8080/JWKS
